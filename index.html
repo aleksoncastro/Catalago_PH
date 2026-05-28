@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Imóveis | PH Conecta Imóveis</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Link para o CSS customizado -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Script de Filtro e Busca -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Header do Catálogo -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="brand-showcase">
+                <div class="logo-wrapper ph-logo-wrapper">
+                    <img src="assets/logo_ph.png" alt="PH Conecta Imóveis" class="logo-img ph-logo">
+                </div>
+                <div class="brand-divider"></div>
+                <div class="logo-wrapper bb-logo-wrapper">
+                    <img src="assets/bbusiness_logo.png" alt="BBusiness Imobiliária" class="logo-img bb-logo">
+                </div>
+            </div>
+            <div class="header-text">
+                <span class="badge">Parceria Exclusiva</span>
+                <h1>PH Conecta Imóveis</h1>
+                <p>Catálogo Selecionado • Parceria BBusiness Imobiliária</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de Filtros (Busca e Badges Dinâmicas) -->
+    <section class="filter-section">
+        <div class="filter-container">
+            <div class="search-box">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" placeholder="Buscar imóveis (Ex: Fazenda, Casa, Porto Nacional...)">
+            </div>
+            <div class="filter-badges">
+                <span class="filter-badge active" data-filter="all">Todos</span>
+                <span class="filter-badge" data-filter="fazenda">Fazendas</span>
+                <span class="filter-badge" data-filter="casa">Casas</span>
+                <span class="filter-badge" data-filter="terreno">Terrenos</span>
+                <span class="filter-badge" data-filter="outro">Outros</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Grid de Imóveis -->
+    <main class="catalog-container">
+        <div class="catalog-grid" id="catalog-grid">
+
+            <!-- IMÓVEL 1: Fazenda FA0011_BSS -->
+            <a href="https://www.bbusinessimobiliaria.com.br/imovel/fazenda-a-venda-com-quartossendo-suite-ipueiras-to/FA0011_BSS" target="_blank" class="card-item" data-category="fazenda">
+                <div class="card-image-wrapper">
+                    <img src="https://static.arboimoveis.com.br/FA0011_BSS/captura-de-tela-2026-04-27-1753331777325826896.png" alt="Fazenda Recanto Feliz" class="card-image" onerror="this.src='https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80'">
+                    <div class="card-tag">Fazenda</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 7 12 7 12s7-6.75 7-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Ipueiras - TO</span>
+                    </div>
+                    <h3 class="card-title">Fazenda Recanto Feliz - 16,9 Alqueires</h3>
+                    <p class="card-description">Pronta para pecuária a 35 km de Porto Nacional. Com 11 alqueires formados, toda piqueteada, curral pronto, piscina, galinheiro para 450 galinhas e casa sede confortável (3 quartos, sendo 1 suíte).</p>
+                    
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                            <span>16,9 Alq. (817k m²)</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16h2V4H2zm4 4v10h12V8H6zm14-4v16h2V4h-2zM8 10h8v6H8v-6z"></path></svg>
+                            <span>3 Quartos</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                            <span>1 Suíte</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <span class="price-label">Valor de venda</span>
+                            <span class="price-value">R$ 2.028.000</span>
+                        </div>
+                        <div class="card-btn">
+                            Ver Detalhes
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- IMÓVEL 2: Fazenda FA0012_BSS -->
+            <a href="https://www.bbusinessimobiliaria.com.br/imovel/fazenda-a-venda-r-monte-do-carmo-to/FA0012_BSS" target="_blank" class="card-item" data-category="fazenda">
+                <div class="card-image-wrapper">
+                    <img src="https://static.arboimoveis.com.br/FA0012_BSS/image1777584382706.png" alt="Fazenda em Monte do Carmo" class="card-image" onerror="this.src='https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80'">
+                    <div class="card-tag">Fazenda</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 7 12 7 12s7-6.75 7-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Monte do Carmo - TO</span>
+                    </div>
+                    <h3 class="card-title">Fazenda Monte do Carmo - 54 Alqueires</h3>
+                    <p class="card-description">Oportunidade real de R$ 45.000 por alqueire. Fazenda rica em água, com 3 divisões de pasto (capim formado), curral, galpão de máquinas, 3 tanques de peixe e várias nascentes.</p>
+                    
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                            <span>54 Alqueires</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16h2V4H2zm4 4v10h12V8H6zm14-4v16h2V4h-2zM8 10h8v6H8v-6z"></path></svg>
+                            <span>2 Quartos</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><i data-testid="fa-shower" class="fa-light fa-shower"></i></svg>
+                            <span>1 Banheiro</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <span class="price-label">Valor de venda</span>
+                            <span class="price-value">R$ 2.430.000</span>
+                        </div>
+                        <div class="card-btn">
+                            Ver Detalhes
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- IMÓVEL 3: Fazenda FA0014_BSS -->
+            <a href="https://www.bbusinessimobiliaria.com.br/imovel/fazenda-a-venda-m2-mateiros-to/FA0014_BSS" target="_blank" class="card-item" data-category="fazenda">
+                <div class="card-image-wrapper">
+                    <img src="https://static.arboimoveis.com.br/FA0014_BSS/image1779395079462.png" alt="Fazenda no Jalapão" class="card-image" onerror="this.src='https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80'">
+                    <div class="card-tag">Fazenda</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 7 12 7 12s7-6.75 7-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Mateiros (Jalapão) - TO</span>
+                    </div>
+                    <h3 class="card-title">Fazenda Jalapão - 540 Alqueires</h3>
+                    <p class="card-description">Ativo verde único às margens do Rio Novo. Ideal para ecoturismo, resort internacional, compensação ESG ambiental e projetos certificados de Crédito de Carbono.</p>
+                    
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                            <span>540 Alq. (27M m²)</span>
+                        </div>
+                        <div class="feature-item">
+                            <span>Jalapão</span>
+                        </div>
+                        <div class="feature-item">
+                            <span>Rio Novo</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <span class="price-label">Valor de venda</span>
+                            <span class="price-value">R$ 9.720.000</span>
+                        </div>
+                        <div class="card-btn">
+                            Ver Detalhes
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- IMÓVEL 4: Terreno TE0668_BSS -->
+            <a href="https://www.bbusinessimobiliaria.com.br/imovel/terreno-a-venda-jardim-querido-porto-nacional-to/TE0668_BSS" target="_blank" class="card-item" data-category="terreno">
+                <div class="card-image-wrapper">
+                    <img src="https://static.arboimoveis.com.br/TE0668_BSS/captura-de-tela-2026-05-05-1523521778006006482.png" alt="Terreno Jardim Querido" class="card-image" onerror="this.src='https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80'">
+                    <div class="card-tag">Lote / Terreno</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 7 12 7 12s7-6.75 7-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Jardim Querido, Porto Nacional - TO</span>
+                    </div>
+                    <h3 class="card-title">Terreno de 500m² - Jardim Querido</h3>
+                    <p class="card-description">Oportunidade incrível no Jardim Querido. Lote com metragem diferenciada de 10x50 metros. Excelente para construir sua residência ou investir em valorização.</p>
+                    
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                            <span>500 m²</span>
+                        </div>
+                        <div class="feature-item">
+                            <span>Excelente Localização</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <span class="price-label">Valor de venda</span>
+                            <span class="price-value">R$ 100.000</span>
+                        </div>
+                        <div class="card-btn">
+                            Ver Detalhes
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- IMÓVEL 5: Casa CA1895_BSS -->
+            <a href="https://www.bbusinessimobiliaria.com.br/imovel/casa-a-venda-com-suites-jardim-america-porto-nacional-to/CA1895_BSS" target="_blank" class="card-item" data-category="casa">
+                <div class="card-image-wrapper">
+                    <img src="https://static.arboimoveis.com.br/CA1895_BSS/casa-a-venda-iza-ph1775769109636.png" alt="Casa Jardim América" class="card-image" onerror="this.src='https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=800&q=80'">
+                    <div class="card-tag">Casa Nova</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 7 12 7 12s7-6.75 7-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Jardim América, Porto Nacional - TO</span>
+                    </div>
+                    <h3 class="card-title">Casa Nova com 2 Suítes</h3>
+                    <p class="card-description">Localização estratégica ao lado do IFTO e muito próxima à UFT, ITPAC/AFYA, Atacadão e UPA. Sala e cozinha integradas, quintal privativo e espaço para futura ampliação.</p>
+                    
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                            <span>97 m²</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16h2V4H2zm4 4v10h12V8H6zm14-4v16h2V4h-2zM8 10h8v6H8v-6z"></path></svg>
+                            <span>2 Suítes</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><i data-testid="fa-shower" class="fa-light fa-shower"></i></svg>
+                            <span>1 Banheiro</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <span class="price-label">Valor de venda</span>
+                            <span class="price-value">R$ 225.000</span>
+                        </div>
+                        <div class="card-btn">
+                            Ver Detalhes
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- IMÓVEL 6: Casa CA1923_BSS -->
+            <a href="https://www.bbusinessimobiliaria.com.br/imovel/casa-a-venda-com-quartos-sendo-suite-nova-capital-porto-nacional-to/CA1923_BSS" target="_blank" class="card-item" data-category="casa">
+                <div class="card-image-wrapper">
+                    <img src="https://static.arboimoveis.com.br/CA1923_BSS/image1776461032866.png" alt="Casa Nova Capital" class="card-image" onerror="this.src='https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80'">
+                    <div class="card-tag">Com Piscina</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 7 12 7 12s7-6.75 7-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Nova Capital, Porto Nacional - TO</span>
+                    </div>
+                    <h3 class="card-title">Casa com Piscina & Lazer Completo</h3>
+                    <p class="card-description">Completa e bem espaçosa. Sala de jantar integrada à cozinha, 4 dormitórios (sendo 1 suíte), área de serviço, espaço gourmet externo ideal para churrasco e piscina privativa.</p>
+                    
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                            <span>169 m²</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16h2V4H2zm4 4v10h12V8H6zm14-4v16h2V4h-2zM8 10h8v6H8v-6z"></path></svg>
+                            <span>4 Quartos</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><i data-testid="fa-shower" class="fa-light fa-shower"></i></svg>
+                            <span>1 Suíte</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <span class="price-label">Valor de venda</span>
+                            <span class="price-value">R$ 330.000</span>
+                        </div>
+                        <div class="card-btn">
+                            Ver Detalhes
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- IMÓVEL 7: Casa CA1894_BSS -->
+            <a href="https://www.bbusinessimobiliaria.com.br/imovel/casa-a-venda-com-quartos-sendo-suite-jardim-america-porto-nacional-to/CA1894_BSS" target="_blank" class="card-item" data-category="casa">
+                <div class="card-image-wrapper">
+                    <img src="https://static.arboimoveis.com.br/CA1894_BSS/11775764515633.png" alt="Casa Jardim América" class="card-image" onerror="this.src='https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80'">
+                    <div class="card-tag">Alto Padrão</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 7 12 7 12s7-6.75 7-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Jardim América, Porto Nacional - TO</span>
+                    </div>
+                    <h3 class="card-title">Casa de Alto Padrão em Laje</h3>
+                    <p class="card-description">Fino acabamento. Toda no porcelanato com estrutura sólida de laje. Conta com 2 quartos amplos, 1 suíte elegante, sala, cozinha funcional, garagem coberta e ótimo quintal.</p>
+                    
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                            <span>164 m²</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16h2V4H2zm4 4v10h12V8H6zm14-4v16h2V4h-2zM8 10h8v6H8v-6z"></path></svg>
+                            <span>2 Quartos</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 9V5a3 3 0 0 0-3-3l-4 9v11h11.28a2 2 0 0 0 2-1.7l1.38-9a2 2 0 0 0-2-2.3H14zM7 22H4a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2h3"></path></svg>
+                            <span>1 Suíte</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <span class="price-label">Valor de venda</span>
+                            <span class="price-value">R$ 380.000</span>
+                        </div>
+                        <div class="card-btn">
+                            Ver Detalhes
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- IMÓVEL 8: Galpão BA0057_BSS -->
+            <a href="https://www.bbusinessimobiliaria.com.br/imovel/galpao-barracao-para-venda-e-locacao-vila-nova-porto-nacional-to/BA0057_BSS" target="_blank" class="card-item" data-category="outro">
+                <div class="card-image-wrapper">
+                    <img src="https://static.arboimoveis.com.br/BA0057_BSS/galpao1777313570272.png" alt="Galpão Vila Nova" class="card-image" onerror="this.src='https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=800&q=80'">
+                    <div class="card-tag">Galpão / Comercial</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 7 12 7 12s7-6.75 7-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Vila Nova, Porto Nacional - TO</span>
+                    </div>
+                    <h3 class="card-title">Galpão Comercial de 440m²</h3>
+                    <p class="card-description">Galpão amplo (10,50 x 40m) com excelente localização estratégica. Contém dois escritórios e área de fundo operacional perfeita para logística ou serviços.</p>
+                    
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                            <span>440 m²</span>
+                        </div>
+                        <div class="feature-item">
+                            <span>2 Escritórios</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><i data-testid="fa-shower" class="fa-light fa-shower"></i></svg>
+                            <span>1 Banheiro</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <span class="price-label">Venda ou Locação</span>
+                            <span class="price-value">R$ 1.300.000</span>
+                        </div>
+                        <div class="card-btn">
+                            Ver Detalhes
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- IMÓVEL 9: Resort RE0001_BSS -->
+            <a href="https://www.bbusinessimobiliaria.com.br/imovel/resort-a-venda-residencial-acapulco-porto-nacional-to/RE0001_BSS" target="_blank" class="card-item" data-category="outro">
+                <div class="card-image-wrapper">
+                    <img src="https://static.arboimoveis.com.br/RE0001_BSS/resort-marly-marinho1776967394102-11776972100570.png" alt="Resort Beira Lago" class="card-image" onerror="this.src='https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=800&q=80'">
+                    <div class="card-tag">Luxo / Resort</div>
+                </div>
+                <div class="card-content">
+                    <div class="card-location">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a8 8 0 0 0-8 8c0 5.25 7 12 7 12s7-6.75 7-12a8 8 0 0 0-8-8z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        <span>Residencial Acapulco, Porto Nacional - TO</span>
+                    </div>
+                    <h3 class="card-title">Resort à Beira do Lago - Refúgio Privado</h3>
+                    <p class="card-description">Estrutura espetacular com 20 suítes climatizadas, 30m de orla privativa de lago, 2 lotes amplos (20x30m), área de lazer com piscina e energia solar sustentável.</p>
+                    
+                    <div class="card-features">
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="9" y1="3" x2="9" y2="21"></line><line x1="15" y1="3" x2="15" y2="21"></line><line x1="3" y1="9" x2="21" y2="9"></line><line x1="3" y1="15" x2="21" y2="15"></line></svg>
+                            <span>2.400 m²</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 4v16h2V4H2zm4 4v10h12V8H6zm14-4v16h2V4h-2zM8 10h8v6H8v-6z"></path></svg>
+                            <span>20 Suítes</span>
+                        </div>
+                    </div>
+                    
+                    <div class="card-footer">
+                        <div class="card-price">
+                            <span class="price-label">Valor de venda</span>
+                            <span class="price-value">R$ 2.400.000</span>
+                        </div>
+                        <div class="card-btn">
+                            Ver Detalhes
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </main>
+
+    <!-- Footer do Catálogo -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-logos">
+                <img src="assets/logo_ph.png" alt="PH Conecta Imóveis Logo" class="footer-logo ph-flogo">
+                <img src="assets/bbusiness_logo.png" alt="BBusiness Imobiliária Logo" class="footer-logo bb-flogo">
+            </div>
+            <div class="footer-info">
+                <h3>PH Conecta Imóveis</h3>
+                <p>Facilitando a sua conexão com o imóvel ideal, com parcerias de confiança.</p>
+                <p class="copyright">&copy; 2026 PH Conecta Imóveis. Todos os direitos reservados. Imóveis hospedados no site da BBusiness Imobiliária.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
