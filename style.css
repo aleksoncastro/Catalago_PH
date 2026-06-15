@@ -1016,6 +1016,63 @@ body {
     .form-row {
         grid-template-columns: 1fr;
     }
+    
+    /* Ajustes Gerais de Tipografia e Espaçamento */
+    .contact-header h2 {
+        font-size: 2rem;
+    }
+    
+    .main-footer {
+        padding: 2.5rem 1.5rem 1.5rem 1.5rem;
+    }
+
+    .main-nav {
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .nav-link {
+        font-size: 0.95rem;
+    }
+
+    .info-card {
+        padding: 1.5rem;
+    }
+
+    .card-content {
+        padding: 1.25rem;
+    }
+    
+    .team-card-body {
+        padding: 1.5rem;
+    }
+    
+    .filter-section {
+        padding: 1rem 1.5rem;
+    }
+    
+    /* Widget Flutuante Responsivo */
+    .floating-contacts {
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .fc-toggle {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+    }
+    
+    .fc-item {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    .fc-tooltip {
+        display: none !important; /* Ocultar tooltips no celular para evitar travamento no tap */
+    }
 }
 /* ==========================================================================
    TEAM PAGE
