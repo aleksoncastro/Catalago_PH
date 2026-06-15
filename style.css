@@ -714,6 +714,11 @@ body {
     color: white;
 }
 
+.fc-yt:hover {
+    background-color: #FF0000;
+    color: white;
+}
+
 .fc-tooltip {
     position: absolute;
     right: 65px;
