@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fale Conosco | PH Conecta Imóveis</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Entre em contato com a PH Conecta Imóveis. Estamos localizados em Porto Nacional, Tocantins. Fale conosco para compra, venda e locação de imóveis.">
+    <meta name="keywords" content="Contato, Imobiliária, Porto Nacional, Tocantins, WhatsApp, Telefone, PH Conecta Imóveis">
+    <meta name="author" content="PH Conecta Imóveis">
+    
+    <!-- Open Graph / Redes Sociais -->
+    <meta property="og:title" content="Fale Conosco | PH Conecta Imóveis">
+    <meta property="og:description" content="Entre em contato conosco. Escritório em Porto Nacional - TO. Especialistas no mercado imobiliário.">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="pt_BR">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Link para o CSS customizado -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header do Catálogo -->
+    <header class="main-header">
+        <div class="header-container">
+            <div class="brand-showcase">
+                <a href="index.html" class="logo-wrapper ph-logo-wrapper">
+                    <img src="assets/logo_ph.png" alt="PH Conecta Imóveis" class="logo-img ph-logo">
+                </a>
+                <div class="brand-divider"></div>
+                <div class="logo-wrapper bb-logo-wrapper">
+                    <img src="assets/bbusiness_logo.png" alt="BBusiness Imobiliária" class="logo-img bb-logo">
+                </div>
+            </div>
+            
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link">Catálogo</a>
+                <a href="contato.html" class="nav-link active">Contato</a>
+            </nav>
+
+            <div class="header-text">
+                <span class="badge">Parceria Exclusiva</span>
+                <h1 style="font-size: 1.2rem; margin-top: 0.2rem;">PH Conecta Imóveis</h1>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção de Contato -->
+    <main class="contact-page">
+        <div class="contact-header">
+            <h2>Fale Conosco</h2>
+            <p>Estamos prontos para te atender. Envie uma mensagem ou visite nosso escritório.</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Formulário -->
+            <div class="contact-form-section">
+                <h3>Envie uma Mensagem</h3>
+                <form class="contact-form" onsubmit="sendToWhatsApp(event)">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Telefone / WhatsApp</label>
+                            <input type="tel" id="phone" name="phone" placeholder="(63) 90000-0000" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Como podemos ajudar?" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Enviar Mensagem <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Informações e Mapa -->
+            <div class="contact-info-section">
+                <div class="info-card">
+                    <h3>Nossos Contatos</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <span>E-mail</span>
+                                <a href="mailto:phconectaimoveis@gmail.com">phconectaimoveis@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <span>WhatsApp Principal</span>
+                                <a href="https://wa.me/5563984659005" target="_blank">(63) 98465-9005</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <span>WhatsApp Secundário</span>
+                                <a href="https://wa.me/5563981002952" target="_blank">(63) 98100-2952</a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <span>Endereço</span>
+                                <strong>Ao lado do IFTO - Quadra-04; Lote-45</strong>
+                                <span>Jardim América, Porto Nacional - TO</span>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <div>
+                                <span>Horário de Funcionamento</span>
+                                <strong>Aberto · Fecha 18:00</strong>
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/imobiliaria_ph_conecta_imoveis/" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61579392174771" target="_blank" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://whatsapp.com/channel/0029VbCNciaJf05h0G0z0J1j" target="_blank" class="social-icon"><i class="fa-solid fa-bullhorn"></i></a>
+                    </div>
+                </div>
+
+                <!-- Google Maps Embutido -->
+                <div class="map-container">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1139.7744319409855!2d-48.39763713028325!3d-10.694481699999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x933b0d91617a31d5%3A0x5bad2772ea0631fc!2sPH%20Conecta%20Im%C3%B3veis!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" 
+                        width="100%" 
+                        height="250" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer do Catálogo Profissional -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-grid">
+                
+                <div class="footer-col brand-col">
+                    <div class="footer-logos">
+                        <img src="assets/logo_ph.png" alt="PH Conecta Imóveis Logo" class="footer-logo ph-flogo">
+                        <img src="assets/bbusiness_logo.png" alt="BBusiness Imobiliária Logo" class="footer-logo bb-flogo">
+                    </div>
+                    <p class="brand-desc">
+                        A PH Conecta Imóveis, liderada por Paulo Henrique Rodrigues – CRECI/TO 5253, é franqueada da BBUSINESS Imobiliária e atua em todo o Tocantins com soluções completas no mercado imobiliário urbano e rural.
+                    </p>
+                </div>
+                
+                <div class="footer-col info-col">
+                    <h3>Nossas Especialidades</h3>
+                    <ul class="footer-list">
+                        <li><i class="fa-solid fa-check"></i> Compra, venda e locação</li>
+                        <li><i class="fa-solid fa-house"></i> Casas, terrenos, chácaras e fazendas</li>
+                        <li><i class="fa-solid fa-file-signature"></i> Financiamento e consultoria</li>
+                        <li><i class="fa-solid fa-scale-balanced"></i> Avaliação e perícia judicial</li>
+                        <li><i class="fa-solid fa-leaf"></i> ESG, Ativos Ambientais e Crédito de Carbono</li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col contact-col">
+                    <h3>Contato & Localização</h3>
+                    <ul class="footer-contact-list">
+                        <li>
+                            <i class="fa-solid fa-location-dot"></i>
+                            <div>
+                                <strong>Escritório em Porto Nacional - TO</strong>
+                                <a href="https://www.google.com/maps/place/PH+Conecta+Im%C3%B3veis/@-10.6944817,-48.399383,1068m/data=!3m2!1e3!4b1!4m6!3m5!1s0x933b0d91617a31d5:0x5bad2772ea0631fc!8m2!3d-10.694487!4d-48.3968081!16s%2Fg%2F11xyh6w7kj?entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D" target="_blank" style="font-weight: 400; display: flex; flex-direction: column; gap: 0.2rem;" title="Ver no Google Maps">
+                                    <span>Ao lado do IFTO - Quadra-04; Lote-45 - Jardim América</span>
+                                    <span>CEP: 77500-000 | Atuação em todo o Tocantins 🌎</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-clock"></i>
+                            <span>Aberto · Fecha 18:00</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            <a href="mailto:phconectaimoveis@gmail.com">phconectaimoveis@gmail.com</a>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div style="display: flex; flex-direction: column; gap: 0.2rem;">
+                                <a href="https://wa.me/5563984659005" target="_blank">(63) 98465-9005</a>
+                                <a href="https://wa.me/5563981002952" target="_blank">(63) 98100-2952</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="copyright">&copy; 2026 PH Conecta Imóveis. Todos os direitos reservados. Imóveis hospedados no site da BBusiness Imobiliária.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para envio via WhatsApp -->
+    <script>
+        function sendToWhatsApp(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            const message = document.getElementById('message').value;
+
+            // Formatação da mensagem
+            const text = `Olá! Vim pelo site da PH Conecta Imóveis.%0A%0A*Nome:* ${name}%0A*E-mail:* ${email}%0A*Telefone:* ${phone}%0A*Mensagem:* ${message}`;
+            
+            // Número especificado: (63) 98100-2952 -> 5563981002952
+            const waLink = `https://wa.me/5563981002952?text=${text}`;
+            
+            window.open(waLink, '_blank');
+        }
+    </script>
+</body>
+</html>
